@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "deny": ["Read(./.env)", "Read(./.env.local)"]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read|Edit|Write|Bash",
+        "hooks": [
+          { "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/proteger-secretos.js\"" }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/tests-al-terminar.js\"" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "landing-curso",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "evals": "node evals/correr.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2"
+  }
+}
