@@ -5,7 +5,7 @@ Sitio estático, sin dependencias ni paso de compilación.
 ## Verla en local
 
 ```bash
-cd web
+cd docs
 npx serve -l 3000
 ```
 
@@ -14,12 +14,12 @@ npx serve -l 3000
 **Con la terminal:**
 
 ```bash
-cd web
+cd docs
 npx vercel        # crea una preview
 npx vercel --prod # publica en producción
 ```
 
-**Desde GitHub:** al importar el repositorio, en **Root Directory** elige `web`. No hace falta un comando de build.
+**Desde GitHub:** al importar el repositorio, en **Root Directory** elige `docs`. No hace falta un comando de build.
 
 ## Antes de publicar
 
